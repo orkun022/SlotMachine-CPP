@@ -6,11 +6,11 @@ using namespace std;
 
 string getSymbol(int num) {
     switch (num) {
-        case 0: return "🍒";
-        case 1: return "🍋";
-        case 2: return "🍉";
-        case 3: return "🍇";
-        default: return "❓";
+        case 0: return "A";
+        case 1: return "B";
+        case 2: return "C";
+        case 3: return "D";
+        default: return "?";
     }
 }
 
@@ -23,15 +23,15 @@ int main() {
         int slot2 = rand() % 4;
         int slot3 = rand() % 4;
 
-        cout << "\n🎰 Slot Machine 🎰\n";
-        cout << "--------------------\n";
+        cout << "\n== Slot Machine ==\n";
+        cout << "-------------------\n";
         cout << "| " << getSymbol(slot1) << " | " << getSymbol(slot2) << " | " << getSymbol(slot3) << " |\n";
-        cout << "--------------------\n";
+        cout << "-------------------\n";
 
         if (slot1 == slot2 && slot2 == slot3) {
-            cout << "🎉 JACKPOT! You win!\n";
+            cout << "!!! JACKPOT! You win!\n";
         } else {
-            cout << "😢 Sorry, try again.\n";
+            cout << "Sorry, try again.\n";
         }
 
         cout << "\nPlay again? (y/n): ";
@@ -42,3 +42,4 @@ int main() {
     cout << "Thanks for playing!\n";
     return 0;
 }
+
