@@ -1,0 +1,3 @@
+slot-machine
+*.exe
+__pycache__/
